@@ -50,7 +50,7 @@ class AWSDriver:
 
     # Initialization - connection to AWS initialization
     def sign_in(self):
-        """ setup initial connections to aws and psafe """
+        """ setup initial connections to aws """
         self.logger.info("Method Entry.")
 
         #self.ec2 = boto3.resource('ec2', region_name=self.region, aws_access_key_id=self.aws_akey,

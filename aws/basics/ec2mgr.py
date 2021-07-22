@@ -38,7 +38,7 @@ class EC2Manager:
 
     # add inbound ports to the sec group of jump hosts. These  are the ports needed for BT PasswordSafe
     def __add_sg_ingres_for_psafe(self, sg_id):
-        """  Sets up Jump Host SG ingres ports for the BT appliance. void Return """
+        """  Sets up Jump Host SG ingres ports for public access. void Return """
         self.logger.info("Method Entry. sg_id '%s'", sg_id)
 
         self.client.authorize_security_group_ingress(GroupId=sg_id, IpProtocol='tcp', FromPort=22,
