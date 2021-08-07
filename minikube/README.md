@@ -41,4 +41,9 @@ Logout and log back to EC2 (so usermod settings take effect)<br />
 
   sudo yum install -y kubeadm kubelet kubectl --disableexcludes=kubernetes<br /> 
 
-5. minikube start --vm-driver=none 
+5. minikube start --vm-driver=none <br />
+
+-----------------------
+6. kubectl apply -f kube-deployment.yaml <br />
+7. kubectl delete -f kube-deployment.yaml <br />
+
